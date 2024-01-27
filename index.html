@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Countdown</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="custom.css">
-    <script src="app.js"></script>
-  
 </head>
-
 <body>
-    <div class="main">
-        <div class="overlay">
-            <div class="title">We are coming soon</div>
-            <div class="title" id="end-date">20 March 2022 10:00 PM</div>
-            <div class="col">
-                <div>
-                    <input type="text" readonly value="0">
-                    <br/>
-                    <label for="">Days</label>
-                </div>
-                <div>
-                    <input type="text" readonly value="0">
-                    <br/>
-                    <label for="">Hours</label>
-                </div>
-                <div>
-                    <input type="text" readonly value="0">
-                    <br/>
-                    <label for="">Minutes</label>
-                </div>
-                <div>
-                    <input type="text" readonly value="0">
-                    <br/>
-                    <label for="">Seconds</label>
-                </div>
-            </div>
-        </div>
+    <div class="bk">
+        <img src="bkimage1.jpg">
     </div>
     
-</body>
+    <div class="countdown">
+        <div class="box">
+            <span class="num" id="day-box">00</span>
+            <span class="text">Days</span>
+        </div>
+        <div class="box">
+            <span class="num" id="hr-box">00</span>
+            <span class="text">Hours</span>
+        </div>
+        <div class="box">
+            <span class="num" id="min-box">00</span>
+            <span class="text">Minutes</span>
+        </div>
+        <div class="box">
+            <span class="num" id="sec-box">00</span>
+            <span class="text">Seconds</span>
+        </div>
+    </div>
 
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
 </html>
